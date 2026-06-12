@@ -90,6 +90,7 @@ function makePurchase() {
   } else {   
     alert(
       `
+        ORQUIDÁRIO LILÁS
         Obrigado pela sua compra!
         Valor do pedido: R$${totalAmount}\n
         Volte sempre :)
@@ -133,10 +134,11 @@ function renderlist(list){
     `
   })
 }
+
 async function getApiList(){
   try {
     const response = await fetch(
-      'http://127.0.0.1:5000/list',
+      'http://127.0.0.1:5000/produtos',
       {
         method:'GET'
       }
